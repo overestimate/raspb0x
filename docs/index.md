@@ -22,6 +22,7 @@
   13. Run `./setup-P2.sh`. This will finish the setup and reboot.
   14. If all is well, you will see a GUI designed for no keyboard.
   15. Done!
+
 ## What's WIP?
  * The p2 script.
  * an updater.
