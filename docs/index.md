@@ -6,6 +6,7 @@
  * power adapter/portable charger with 2.1A output minimum
  * microUSB cable
  * this software
+ 
  ## Setup
   1. Download Raspbian Lite (no NOOBS) from [this official torrent](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip.torrent).
   2. Burn to 8GB+ microSD with software of your choosing. Etcher recommended.
