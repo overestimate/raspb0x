@@ -15,7 +15,7 @@ Raspberry Pi 3B based checkra1n dongle.
    4a. If this fails, hook up HDMI after waiting 5 minutes and reboot to enable HDMI. You can troubleshoot Wi-Fi
    4b. If not, continue.
   5. Once in SSH, use username `pi` and password `raspberry` to login.
-  6. Execute `sudo raspi` and change the password to `raspb0x` using first option. Don't forget this!
+  6. Execute `sudo raspi-config` and change the password to `raspb0x` using first option. Don't forget this!
   7. Run `sudo apt-get update && sudo apt-get install git` and wait for it to finish.
   8. Run `git clone https://github.com/tyTheDebugger/raspb0x.git`.
   9. Once cloned, execute `chmod -R 755 rainb0x && cd raspb0x`.
