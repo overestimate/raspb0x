@@ -7,7 +7,7 @@
  * microUSB cable
  * this software
  ## Setup
-  1. Download Raspbian Lite (no NOOBS) from [this official torrent](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-09-30/2019-09-26-raspbian-buster-lite.zip.torrent).
+  1. Download Raspbian Lite (no NOOBS) from [this official torrent](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip.torrent).
   2. Burn to 8GB+ microSD with software of your choosing. Etcher recommended.
   3. Drag and drop [wpa_supplicant.conf (tutorial linked)](https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/) to the FAT32 partition, along side a blank file named `ssh`.
   4. Connect power and turn on. Wait a little, and try to SSH to your pi. The IP can be found with arp, nmap, or by using MDNS (raspberrypi.local).
