@@ -7,12 +7,14 @@
  * microUSB cable
  * this software
  ## Setup
-  1. Download Raspbian Lite (no NOOBS) from (this official torrent)[https://downloads.raspberrypi.org/raspbian_lite_latest.torrent].
+  1. Download Raspbian Lite (no NOOBS) from [this official torrent](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-09-30/2019-09-26-raspbian-buster-lite.zip.torrent).
   2. Burn to 8GB+ microSD with software of your choosing. Etcher recommended.
-  3. Drag and drop [wpa_supplicant.conf (tutorial linked)](https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/) to the FAT32 partition.
+  3. Drag and drop [wpa_supplicant.conf (tutorial linked)](https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/) to the FAT32 partition, along side a blank file named `ssh`.
   4. Connect power and turn on. Wait a little, and try to SSH to your pi. The IP can be found with arp, nmap, or by using MDNS (raspberrypi.local).
+   a. If this fails, hook up HDMI after waiting 5 minutes and reboot to enable HDMI. You can troubleshoot Wi-Fi
+   b. If not, continue.
   5. Once in SSH, use username `pi` and password `raspberry` to login.
-  6. Execute `sudo passwd` and change the password to `raspb0x`. Don't forget this!
+  6. Execute `sudo raspi` and change the password to `raspb0x` using first option. Don't forget this!
   7. Run `sudo apt-get update && sudo apt-get install git` and wait for it to finish.
   8. Run `git clone https://github.com/tyTheDebugger/raspb0x.git`.
   9. Once cloned, execute `chmod -R 755 rainb0x && cd raspb0x`.
@@ -24,5 +26,4 @@
   15. Done!
 
 ## What's WIP?
- * The p2 script.
- * an updater.
+ * The UI, it needs CSS and functionality.
