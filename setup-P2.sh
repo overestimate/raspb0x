@@ -8,9 +8,7 @@ curl -s https://api.github.com/repos/tyTheDebugger/raspb0x/releases/latest \
 | tr -d \" \
 | wget -qi -
 echo Extracting...
-rm -r raspb0x
-mkdir raspb0x
-unzip release-*.zip -d ./raspb0x
+unzip -o release-*.zip -d ./raspb0x
 rm release-*.zip
 echo Setting up autostart...
 cd ~
