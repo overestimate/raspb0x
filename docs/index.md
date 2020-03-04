@@ -18,7 +18,7 @@ Raspberry Pi 3B based checkra1n dongle.
   6. Execute `sudo raspi-config` and change the password to `raspb0x` using first option. Don't forget this!
   7. Run `sudo apt-get update && sudo apt-get install git` and wait for it to finish.
   8. Run `git clone https://github.com/tyTheDebugger/raspb0x.git`.
-  9. Once cloned, execute `chmod -R 755 rainb0x && cd raspb0x`.
+  9. Once cloned, execute `chmod -R 755 raspb0x && cd raspb0x`.
   10. Run `./setup-P1.sh` and follow instructions if needed.
   11. Once rebooted, you should see a display up and running. Use SSH to login (most likely same IP), using `pi` with password `raspb0x`
   12. Run `cd raspb0x`.
