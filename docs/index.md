@@ -1,5 +1,5 @@
 # raspb0x (WIP)
-### Raspberry Pi 3B based checkra1n dongle.
+Raspberry Pi 3B based checkra1n dongle.
 ## Supply List:
  * [This screen. It ships fast and is cheap. Not the best, but who cares?](https://www.amazon.com/kuman-Touch-Screen-Display-Raspberry/dp/B07KLDKM5D)
  * [Rapsberry Pi 3B](https://www.amazon.com/Raspberry-Pi-MS-004-00000024-Model-Board/dp/B01LPLPBS8)
