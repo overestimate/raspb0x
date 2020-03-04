@@ -12,8 +12,8 @@
   2. Burn to 8GB+ microSD with software of your choosing. Etcher recommended.
   3. Drag and drop [wpa_supplicant.conf (tutorial linked)](https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/) to the FAT32 partition, along side a blank file named `ssh`.
   4. Connect power and turn on. Wait a little, and try to SSH to your pi. The IP can be found with arp, nmap, or by using MDNS (raspberrypi.local).
-   a. If this fails, hook up HDMI after waiting 5 minutes and reboot to enable HDMI. You can troubleshoot Wi-Fi
-   b. If not, continue.
+   4a. If this fails, hook up HDMI after waiting 5 minutes and reboot to enable HDMI. You can troubleshoot Wi-Fi
+   4b. If not, continue.
   5. Once in SSH, use username `pi` and password `raspberry` to login.
   6. Execute `sudo raspi` and change the password to `raspb0x` using first option. Don't forget this!
   7. Run `sudo apt-get update && sudo apt-get install git` and wait for it to finish.
