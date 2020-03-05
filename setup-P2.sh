@@ -10,7 +10,7 @@ curl -s https://api.github.com/repos/tyTheDebugger/raspb0x/releases/latest \
 echo Extracting...
 unzip -o release-*.zip -d ./raspb0x
 rm release-*.zip
-echo Setting up autostart...
+echo 'Setting up autostart...'
 cd ~
 echo 'cd /home/pi/raspb0x/web' >> .bashrc
 echo 'bash -c \'sudo startx ./start.sh\'' >> .bashrc
