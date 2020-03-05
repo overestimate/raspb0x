@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.2
+#!/usr/bin/python3
 print("Content-Type: text/html")    
 print()                             
  
