@@ -18,7 +18,7 @@ echo 'Installing checkra1n dependencies and latest version ATM... deps are the o
 echo "deb https://assets.checkra.in/debian /" | sudo tee -a /etc/apt/sources.list
 sudo apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key
 sudo apt update
-sudo apt-get install checkra1n
+sudo apt-get install -y checkra1n
 echo 'Please navigate to Boot Options and next to Console Auto-Login and enable it.'
 read -n 1 -s -r -p "Press any key to continue, it will reboot when done."
 sudo raspi-config
