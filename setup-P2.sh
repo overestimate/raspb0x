@@ -13,7 +13,7 @@ rm release-*.zip
 echo 'Setting up autostart...'
 cd ~
 echo 'cd /home/pi/raspb0x/web' >> .bashrc
-echo 'bash -c \'sudo startx ./start.sh\'' >> .bashrc
+echo bash -c \'sudo startx ./start.sh'\' >> .bashrc
 echo 'Installing checkra1n dependencies...'
 sudo apt-get install -y usbmuxd
 echo 'Please navigate to Boot Options and next to Console Auto-Login and enable it.'
