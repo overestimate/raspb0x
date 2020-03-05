@@ -1,9 +1,9 @@
 #!/bin/bash
 sudo apt-get update
 echo Installing xorg...
-sudo apt-get install --no-install-recommends xserver-xorg
+sudo apt-get -y install --no-install-recommends xserver-xorg
 echo Installing Chromium for the GUI...
-sudo apt-get install chromium-browser
+sudo apt-get -y install chromium-browser
 echo Enabling display...
 read -n 1 -s -r -p "Press any key to continue, it will reboot when done."
 cd ~
