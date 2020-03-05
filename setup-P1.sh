@@ -10,6 +10,6 @@ cd ~
 git clone https://github.com/goodtft/LCD-show
 chmod -R 755 LCD-show 
 cd ~/LCD-show
-sudo ./LCD35-show 0
+sudo ./LCD35-show
 echo If your device has NOT rebooted, it will now.
 sudo reboot
