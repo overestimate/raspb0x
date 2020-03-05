@@ -11,9 +11,13 @@ if (cdDone != 0):
 	print("<script>window.location='/index.html';")
 form = cgi.FieldStorage()
 if form.getvalue("verbose"):
-	doneJB = subprocess.run(["sudo", "./checkra1n","-V"], stdout=subprocess.DEVNULL)
+	doneJB = subprocess.run(["sudo", "./checkra1n","-V"], stdout=subprocess.PIPE)
 else:
-	doneJB = subprocess.run(["sudo", "./checkra1n"], stdout=subprocess.DEVNULL)
+	doneJB = subprocess.run(["sudo", "./checkra1n"], stdout=subprocess.PIPE)
+for c in iter(lambda: process.stdout.read(15), b''):  # replace '' with b'' for Python 3
+        print(c)
+for x in range(15):
+	print("\033[F")
 if (doneJB != 0):
 	print("JB failed! Error code: %s" % str(doneJB))
 	print("<script>window.location='/index.html';")
