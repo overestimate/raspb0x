@@ -9,7 +9,11 @@ cdDone = subprocess.run(["cd", "/home/pi/raspb0x"], stdout=subprocess.DEVNULL)
 if (cdDone != 0):
 	print("Something failed, most likely broken install...")
 	print("<script>window.location='/index.html';")
-doneJB = subprocess.run(["sudo", "./checkra1n"], stdout=subprocess.DEVNULL)
+form = cgi.FieldStorage()
+if form.getvalue("verbose"):
+	doneJB = subprocess.run(["sudo", "./checkra1n","-V"], stdout=subprocess.DEVNULL)
+else:
+	doneJB = subprocess.run(["sudo", "./checkra1n"], stdout=subprocess.DEVNULL)
 if (doneJB != 0):
 	print("JB failed! Error code: %s" % str(doneJB))
 	print("<script>window.location='/index.html';")
