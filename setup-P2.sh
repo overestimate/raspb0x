@@ -3,7 +3,7 @@ cd ~
 echo Grabbing latest release...
 rm release-*.zip
 curl -s https://api.github.com/repos/tyTheDebugger/raspb0x/releases/latest \
-| grep "release-*.zip" \
+| grep \"browser_download_url\" \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
