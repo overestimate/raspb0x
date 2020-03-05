@@ -2,7 +2,8 @@
 print("Content-Type: text/html")    
 print()                             
  
-import cgi,cgitb,subprocess
+import cgi,cgitb,subprocess,os
+os.chdir("/home/pi/raspb0x")
 cgitb.enable() #for debugging
 print("Jailbreaking...")
 cdDone = subprocess.run(["cd", "/home/pi/raspb0x"], stdout=subprocess.DEVNULL)
