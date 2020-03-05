@@ -2,7 +2,7 @@
 print("Content-Type: text/html")    
 print()                             
  
-import cgi,cgitb
+import cgi,cgitb,subprocess
 cgitb.enable() #for debugging
 print("Jailbreaking...")
 cdDone = subprocess.run(["cd", "/home/pi/raspb0x"], stdout=subprocess.DEVNULL)
@@ -20,7 +20,7 @@ for x in range(15):
 	print("\033[F")
 if (doneJB != 0):
 	print("JB failed! Error code: %s" % str(doneJB))
-	print("<script>window.location='/index.html';")
+	print("<script>window.location='/index.html';</script>")
 else:
 	print("JB Success!")
-	print("<script>window.location='/index.html';")
+	print("<script>window.location='/index.html';</script>")
