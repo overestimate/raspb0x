@@ -19,5 +19,5 @@ sudo apt-get install -y usbmuxd
 echo 'Please navigate to Boot Options and next to Console Auto-Login and enable it.'
 read -n 1 -s -r -p "Press any key to continue, it will reboot when done."
 sudo raspi-config
-echo 'Reboot needed to complete setup.'
+echo Reboot needed to complete setup.
 sudo reboot
